@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 100px 250;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 65%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background: #575757;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+header nav ul li .dropdown-content ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+header nav ul li .dropdown-content li:hover > ul {
+    display: block;
+}
+
+header nav ul li .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 80px 20px 20px 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Text color */
+}
+h2 {
+    color: #444; /* Darker heading color */
+    text-align: center; /* Center align headings */
+}
+p {
+    text-align: center; /* Center align paragraphs */
+}
+.session {
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for session blocks */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.session-time {
+    font-weight: bold;
+    color: #007BFF; /* Blue color for session times */
+    text-align: left; /* Left align session times */
+}
+.session-details {
+    margin-left: 20px;
+    text-align: left; /* Left align session details */
+}
+.note {
+    font-style: italic;
+    color: #555;
+    text-align: center; /* Center align notes */
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}

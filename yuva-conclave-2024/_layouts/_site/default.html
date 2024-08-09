@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuva Conclave 2024</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="icon" href="{{ "/assets/images/1723010901306.ico" | relative_url }}" type="image/x-icon">
+    <style>
+        .center-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh; /* Adjust as needed */
+        }
+    
+        .center-section div {
+            max-width: 600px; /* Adjust as needed */
+        }
+    
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0d3258;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    
+        .cta-button:hover {
+            background-color: #4f98e7;
+        }
+        /* Dropdown Styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content li {
+            position: relative;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Sub-dropdown Styles */
+        .sub-dropdown-content {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content li:hover .sub-dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                <li><a href="{{ "/about" | relative_url }}">About</a></li>
+                <li><a href="{{ "/agenda" | relative_url }}">Agenda</a></li>
+                <li class="dropdown">
+                    <a href="{{ "/speaker" | relative_url }}" class="dropbtn">Speakers</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="{{ "/speaker/keynote" | relative_url }}" class="dropbtn">Keynote Speakers</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="{{ "/speaker/keynote/speaker" | relative_url }}">Speaker</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{{ "/speaker/panelist" | relative_url }}" class="dropbtn">Panelists</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="{{ "/speaker/panelist/moderator" | relative_url }}">Moderator</a></li>
+                                <li><a href="{{ "/speaker/panelist/P1" | relative_url }}">Panelist 1</a></li>
+                                <li><a href="{{ "/speaker/panelist/P2" | relative_url }}">Panelist 2</a></li>
+                                <li><a href="{{ "/speaker/panelist/P3" | relative_url }}">Panelist 3</a></li>
+                                <li><a href="{{ "/speaker/panelist/P4" | relative_url }}">Panelist 4</a></li>
+                                <li><a href="{{ "/speaker/panelist/P5" | relative_url }}">Panelist 5</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{{ "/speaker/comedian" | relative_url }}" class="dropbtn">Comedian</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="{{ "/speaker/comedian/comedyfactory" | relative_url }}">Comedy Factory</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="{{ "/venue" | relative_url }}" class="dropbtn">Venue</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="https://maps.app.goo.gl/79LzHKeW5QLTU9RaA" class="dropbtn">Nuvrachna University</a>
+                        </li>
+                    </ul>
+                <li><a href="https://www.thebrewery.co.in/event-details/yi-youth-conclave-laughter-to-leadership">Registration</a></li>
+                <li><a href="https://yivadodara.bio.link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header-container">
+            <h1>Welcome to the Yuva Conclave 2024</h1>
+        </div>
+        <div class="event-photo-container">
+            <img src="{{ "/assets/Images/YC-event-image.png" | relative_url }}" alt="Event Photo" class="event-photo">
+        </div>
+        <section class="center-section">
+            <div>
+                <h1>Yuva Conclave 2024</h1>
+                <p>Join us for an exciting event!</p>
+                <a href="https://www.thebrewery.co.in/event-details/yi-youth-conclave-laughter-to-leadership" class="cta-button">Register Now</a>
+            </div>
+        </section>
+        <link rel="icon" href="{{ "/assets/images/1723010901306.ico" | relative_url }}" type="image/x-icon">
+
+        <div class="countdown-container">
+            <h2>Countdown to Yuva Conclave 2024</h2>
+            <div id="countdown">
+                <span id="days"></span> Days
+                <span id="hours"></span> Hours
+                <span id="minutes"></span> Minutes
+                <span id="seconds"></span> Seconds
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Young Indians Vadodara. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 10, 2024 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the countdown date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
